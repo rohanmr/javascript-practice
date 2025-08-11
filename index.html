@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="name">
+    <input type="text" id="sirname">
+    <input type="text" id="schoolname">
+    <button onclick="getinfo()">Get Info</button>
+
+    <table style="border: 2px solid gray; margin-top: 20px;">
+        <thead>
+            <th>Name</th>
+            <th>Sir Name</th>
+            <th>School Name</th>
+        </thead>
+        <tr>
+            <td id="nametable"></td>
+            <td id="sirnametable"></td>
+            <td id="schoolnametable"></td>
+        </tr>
+    </table>
+
+
+
+    <script>
+        function getinfo() {
+            username = document.querySelector('#name').value
+            sirname = document.querySelector('#sirname').value
+            schoolname = document.querySelector('#schoolname').value
+
+            console.log(username, sirname, schoolname)
+
+            document.querySelector('#nametable').innerHTML = username
+            document.querySelector('#sirnametable').innerHTML = sirname
+            document.querySelector('#schoolnametable').innerHTML = schoolname
+        }
+    </script>
+</body>
+
+</html>
