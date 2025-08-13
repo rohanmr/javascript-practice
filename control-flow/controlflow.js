@@ -57,3 +57,28 @@ for(j=0;j<=20;j++){
         console.log(j)
     }
 }
+
+num=5
+
+if(num < 0){
+    console.log("Number is negative")
+}else if(num>0){
+    console.log("number is postive")
+}else{
+ console.log("Number is zero")
+}
+
+
+//fibonacci using while loop
+a=0
+b=1
+i=0
+while(i<10){
+    console.log(a)
+    temp=a
+    a=b
+    b=temp+b
+    i++
+}
+
+
