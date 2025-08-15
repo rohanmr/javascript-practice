@@ -1,3 +1,5 @@
+
+// Check Eligible to vote
 let age=20;
 if(age>=18){
     console.log("Eligible to vote");
@@ -5,6 +7,8 @@ if(age>=18){
     console.log("Not eligible to vote");
 }
 
+
+//Find Grade
 marks=35
 if(marks>=0 && marks <=100){
     if(marks < 35){
@@ -58,6 +62,8 @@ for(j=0;j<=20;j++){
     }
 }
 
+
+//Check number is postive,negative or zero
 num=5
 
 if(num < 0){
@@ -82,3 +88,5 @@ while(i<10){
 }
 
 
+
+//L
