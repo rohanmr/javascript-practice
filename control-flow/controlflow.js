@@ -18,30 +18,43 @@
 
 
 // Number Guessing Game
-let computerNum= Math.floor(Math.random()*10 + 1)
-let usernumber = 6
+// let computerNum= Math.floor(Math.random()*10 + 1)
+// let usernumber = 6
 
-if(computerNum < usernumber){
-    console.log("number is high")
-}else if(computerNum > usernumber){
-    console.log("number is low")
-}else if(computerNum == usernumber){
-    console.log("You guess the number")
-}else{
-    console.log("Wrong Input")
-}
+// if(computerNum < usernumber){
+//     console.log("number is high")
+// }else if(computerNum > usernumber){
+//     console.log("number is low")
+// }else if(computerNum == usernumber){
+//     console.log("You guess the number")
+// }else{
+//     console.log("Wrong Input")
+// }
 
 
 //Find even number or Print even numbers
 
-for(j=0;j<=20;j++){
-    if(j%2==0){
-        console.log("Even no:",j)
-    }
-}
+// for(j=0;j<=20;j++){
+//     if(j%2==0){
+//         console.log("Even no:",j)
+//     }
+// }
 
 //Sum of degits
+let num=123
 
+x=String(num).split('').map(Number)
+
+console.log(x)
+
+sum=0
+
+x.forEach(n => {
+    sum+=n
+    
+});
+
+console.log("Sum of numbers is",sum)
 
 
 //Fizz Buzz
@@ -56,18 +69,18 @@ for(j=0;j<=20;j++){
 
 //Find the largest of three no
 
-let num1=4
-let num2=16
-let num3=9
+// let num1=4
+// let num2=16
+// let num3=9
 
-if(num1>num2 && num1 > num3){
-    console.log('Number 1 is grater',num1)
+// if(num1>num2 && num1 > num3){
+//     console.log('Number 1 is grater',num1)
 
-}else if(num2 > num1 && num2 > num3){
-    console.log("number 2 is grater",num2)
-}else if(num3 > num1 && num3 > num2 ){
-    console.log("number 3 is grater",num3)
-}
+// }else if(num2 > num1 && num2 > num3){
+//     console.log("number 2 is grater",num2)
+// }else if(num3 > num1 && num3 > num2 ){
+//     console.log("number 3 is grater",num3)
+// }
 
 //Find Odd numbers
 // for(j=0;j<=20;j++){
