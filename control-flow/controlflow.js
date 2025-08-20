@@ -43,24 +43,94 @@
 //Sum of degits
 let num=123
 
-x=String(num).split('').map(Number)
-
-console.log(x)
-
 sum=0
+Math.abs(num)
+while(num > 0 ){
+   digit=num % 10
+   sum=sum+digit
+   num= Math.floor(num/10)
+}
+console.log(sum)
 
-x.forEach(n => {
-    sum+=n
+// x=String(num).split('').map(Number)
+
+// console.log(x)
+
+// sum=0
+
+// x.forEach(n => {
+//     sum+=n
     
-});
+// });
 
-console.log("Sum of numbers is",sum)
+// console.log("Sum of numbers is",sum)
 
 
-//Fizz Buzz
+//Fizz Buzz Program
+
+
+for( i=1 ; i <= 20 ; i++){
+    if(i % 3 == 0 && i % 5 == 0){
+        console.log("fizzBuzz")
+    }else if( i % 3 == 0){
+        console.log("Fizz")
+    }else if(i%5==0){
+        console.log("Buzz")
+    }else{
+        console.log(i)
+    }
+}
 
 
 //Prime Nmber checker
+
+function checkPrime(n){
+    if(n<0)return "negative number"
+    if(n == 1)return "Number is prime no"
+    if(n == 2)return "Number is prime no"
+    
+    if(n % 2 != 0 && n % n == 0){
+      return "Number is prime no"
+    }else{
+        return "It is not prime no"
+    }
+}
+
+console.log(checkPrime(19))
+
+
+//Sum of Odd and Even no 
+let evenNO=0
+let  oddNo =0
+for(i=1 ; i<=100 ;i++){
+    if(i % 2 == 0){
+        evenNO=evenNO+i
+    }else{
+        oddNo=oddNo+i
+    }
+
+}
+
+console.log(evenNO)
+console.log(oddNo)
+
+// Armstrong no
+
+let no = 153;          
+let original = no;     
+sum = 0;           
+
+while (no > 0) {
+    let di = no % 10;                
+    sum = sum + Math.pow(di, 3);     
+    no = Math.floor(no / 10);           
+}
+
+if (original === sum) {
+    console.log("Armstrong No");
+} else {
+    console.log("Not Armstrong No");
+}
 
 
 
@@ -131,12 +201,6 @@ console.log("Sum of numbers is",sum)
 // }
 
 // console.log(n1,op,n2," = ",result)
-
-
-
-
-
-
 
 
 
