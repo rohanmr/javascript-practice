@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .listitem {
+            color: black;
+            font-size: x-large;
+            list-style: none;
+            padding: 10px;
+            background-color: aqua;
+            border: 2px solid black;
+            height: 50px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul id="fruitlist" class="list"></ul>
+    <ul id="electronic"></ul>
+
+
+
+    <script>
+        fruits = ["apple", "mango", "banana"]
+        document.querySelector('#fruitlist').innerHTML = fruits.map((v) => `<li>${v}</li>`).join("")
+
+        electronic = ["Mobile", "Laptop", "headphone", "Heater"]
+
+        document.querySelector("#electronic").innerHTML = electronic.map((ele, i) => `<li class="listitem">${ele}</li>`).join("")
+
+    </script>
+</body>
+
+</html>
