@@ -81,7 +81,7 @@ for(i=0;i<lenNum;i++){
         secondLarg=numArray[j]
     }
    }
-   
+   numArray.sort()
    //re=Math.max(numArray[i])
 }
 console.log(maxNum)
@@ -127,3 +127,27 @@ arr1.map((num)=>console.log(num*num))
 arr1.map((num)=>{
  console.log("Square of num",num**2)
 })
+
+
+
+
+let items = ["Pen", "Book", "Eraser"];
+
+// items.find()
+
+
+let gadgets = ["Phone", "Tablet", "Laptop"];
+
+let colors = ["Red", "Blue", "Green", "Yellow"];
+
+
+let noarray=[10,2,44,20,8,6,98,65,66]
+
+sum=noarray.reduce((sum,num)=>sum+num,0)
+console.log(sum)
+// noarray.filter((num)=>num % 2 ==0)
+// console.log(noarray)
+
+let eno=noarray.some((n)=>n%2==0)
+console.log(eno)
+

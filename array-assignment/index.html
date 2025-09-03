@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .todolist {
+            gap: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .todolist p {
+            font-size: xx-large;
+        }
+
+        .btn {
+            height: 25px;
+            width: 100px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input id="todo" type="text"><button onclick="submitTodo()">Add Todo</button><button onclick="restTodo()">Rest
+            Todo</button>
+
+
+    </div>
+    <div class="todolist" id="mapTodo"></div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
