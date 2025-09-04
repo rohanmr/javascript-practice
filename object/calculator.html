@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <title></title>
+</head>
+
+<body>
+    <h1 class="text-center mt-6 mb-6 text-2xl font-semibold">Calculator</h1>
+    <div class="flex justify-center items-center gap-2">
+        <input type="number" id="num1"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-64 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="0" required />
+        <input type="number" id="num2"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-64 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="0" required />
+
+    </div>
+    <div class="flex justify-center mt-10 gap-3">
+        <button class="border border-2 px-5 py-1 bg-blue-200 hover:bg-blue-300" onclick="addCal()">ADD</button>
+        <button class="border border-2 px-5 py-1 bg-blue-200 hover:bg-blue-300" onclick="subCal()">SUB</button>
+        <button class="border border-2 px-5 py-1 bg-blue-200 hover:bg-blue-300" onclick="mulCal()">MUL</button>
+        <button class="border border-2 px-5 py-1 bg-blue-200 hover:bg-blue-300" onclick="divCal()">DIV</button>
+    </div>
+    <div class="text-center mt-2 text-2xl" id="result"></div>
+    <script>
+        calculator = {
+            add: () => calculator.a + calculator.b,
+            sub: () => calculator.a - calculator.b,
+            mul: () => calculator.a * calculator.b,
+            div: () => calculator.a / calculator.b
+
+        }
+        function addCal() {
+            calculator.a = Number(document.querySelector("#num1").value)
+            calculator.b = Number(document.querySelector("#num2").value)
+            document.querySelector("#result").innerHTML = calculator.add()
+
+        }
+
+        function subCal() {
+            calculator.a = Number(document.querySelector("#num1").value)
+            calculator.b = Number(document.querySelector("#num2").value)
+            document.querySelector("#result").innerHTML = calculator.sub()
+        }
+
+        function mulCal() {
+            calculator.a = Number(document.querySelector("#num1").value)
+            calculator.b = Number(document.querySelector("#num2").value)
+            document.querySelector("#result").innerHTML = calculator.mul()
+
+        }
+
+        function divCal() {
+            calculator.a = Number(document.querySelector("#num1").value)
+            calculator.b = Number(document.querySelector("#num2").value)
+            document.querySelector("#result").innerHTML = calculator.div()
+        }
+    </script>
+</body>
+
+</html>
