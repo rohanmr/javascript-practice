@@ -6,7 +6,8 @@ function myTodos(){
             role="alert">
 
 
-            <div class="ms-3 text-sm font-medium">
+            <div class="ms-3 text-xl
+ font-medium">
             ${v}
             </div>
             <button type="button" onclick="delelet('${v}')"
@@ -91,4 +92,23 @@ function resetMark(){
     minInput.innerHTML=""
 
 marks=[]
+}
+
+cars=["Audi","BMW","Hondai","Tata","Tesla"]
+
+inputSearchElm=document.querySelector("#inputSearch")
+
+function Search(){
+    inputText=inputSearchElm.value
+    result=cars.find((car)=>car.toLowerCase()==inputText.toLowerCase())
+    if(result){
+        document.querySelector("#searchResult").innerHTML=result
+    }else{
+        document.querySelector("#searchResult").innerHTML="Not Found"
+
+    }
+}
+function resetSearch(){
+    inputSearchElm.value=""
+     document.querySelector("#searchResult").innerHTML=""
 }
