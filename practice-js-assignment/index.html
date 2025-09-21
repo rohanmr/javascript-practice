@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Practice JavaScript</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -31,10 +31,13 @@
     <nav class="d-flex justify-content-end m-4">
         <button id="changeTheme" class="btn btn-secondary">Change Theme</button>
     </nav>
-    <div id="modal" class="card shadow-lg d-none w-25 p-5 my-5 mx-auto z-1  ">
+    <div id="modal" class="card shadow-lg d-none w-50 p-5 my-5 mx-auto z-1  ">
         <div class="d-flex justify-content-between align-items-center">
-            <h3>Model Popup on Button Click</h3> <button class="btn btn-danger text-center"
-                id="closeModal">Close</button>
+            <lord-icon src="https://cdn.lordicon.com/pilfbsjh.json" trigger="loop" delay="2000"
+                style="width:100px;height:100px">
+            </lord-icon>
+            <h3>Click To Close</h3>
+            <button class="btn btn-danger text-center" id="closeModal">Close</button>
         </div>
     </div>
     <div class="d-flex justify-content-center mt-5 ">
@@ -44,11 +47,17 @@
 
     </div>
 
-    <div class="d-flex justify-content-center mt-5 ">
+
+
+    <div class="d-flex justify-content-center mt-4 ">
 
         <div class="fs-1">
-            <div class="mb-4 fw-bolder">
-                Digital Clock
+            <div class="mb-4 fw-bolder d-flex align-items-center ">
+                <lord-icon src="https://cdn.lordicon.com/gdowkrjt.json" trigger="loop" delay="2000"
+                    colors="primary:#121331,secondary:#ebe6ef,tertiary:#66a1ee,quaternary:#f24c00"
+                    style="width:80px;height:80px">
+                </lord-icon>
+                <h1>Digital Clock</h1>
             </div>
 
             <div class="text-center fs-3" id="clock">
@@ -61,7 +70,7 @@
     <div class="d-flex justify-content-center mt-5 ">
 
         <div class="fs-1">
-            <div class="mb-4 fw-bolder">
+            <div class="mb-3 fw-bolder ">
                 Counter with Buttons
             </div>
             <div class="d-flex justify-content-center gap-3 h-25 align-items-center">
@@ -76,7 +85,7 @@
 
     </div>
 
-    <div class="d-flex justify-content-center mt-5 ">
+    <div class="d-flex justify-content-center  ">
 
         <div class="fs-1">
             <div class="mb-4 fw-bolder">
@@ -103,7 +112,7 @@
 
 
 
-
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
 
 
     <script>
@@ -112,7 +121,14 @@
             spinElm = document.querySelector("#spinner")
             setTimeout(() => {
                 spinElm.style.display = "none"
-                document.querySelector("#text").textContent = "😈Welcome to my Site.😈"
+                document.querySelector("#text").innerHTML = `
+    <div class="d-flex align-items-center justify-content-center">
+        <lord-icon src="https://cdn.lordicon.com/lalzjnnh.json" trigger="loop" style="width:100px;height:100px">
+        </lord-icon>
+        <h1 class="fw-medium text-danger">Welcome to My Site.</h1>
+        <lord-icon src="https://cdn.lordicon.com/lalzjnnh.json" trigger="loop" style="width:100px;height:100px">
+        </lord-icon>
+    </div>`
             }, 3000)
 
 
