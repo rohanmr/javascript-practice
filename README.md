@@ -8,3 +8,6 @@ https://rohanmr.github.io/javascript-practice/otp-validator-password-genrator/in
 
 ## Practice Js Assignment:
 https://rohanmr.github.io/javascript-practice/practice-js-assignment/index.html
+
+## Form Validations:
+https://rohanmr.github.io/javascript-practice/validation-practice/index.html
