@@ -58,24 +58,23 @@ function sumArray(arr) {
 
 }
 
-
 console.log(sumArray([1, 2, 3, 4])); // 10
-
-
-
 
 // Remove Duplicate Values
 // Remove duplicates from an array.
 let nums = [2, 3, 4, 2, 4, 5, 6, 3];
-const dup = []
-function remvoveDuplicates(nums) {
-  for (let i = 0; i < nums.length; i++) {
-    if (!dup.includes(nums[i])) {
-      dup.push(nums[i])
+dup = []
+
+function remvoveDuplicates(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (!dup.includes(arr[i])) {
+      dup.push(arr[i])
     }
   }
 
 }
+
+
 remvoveDuplicates(nums)
 console.log(dup)
 
@@ -132,13 +131,13 @@ validateByLogicEmail("test@gmail.com")
 //find the bug in below function
 
 function largest(arr) {
-  let max = 0;
-  arr.forEach(num => {
-    if (num > max) {
-      max = num;
+  let larger = 0;
+  arr.map(num => {
+    if (num > larger) {
+      larger = num;
     }
   });
-  console.log(max);
+  console.log(larger);
 }
 largest([34, 76, 59, 32])
 
@@ -148,7 +147,6 @@ function countVowels(str) {
   let count = 0;
   const vowels = "aeiouAEIOU";
   for (let i of str) {
-
     if (vowels.includes(i)) {
       count++;
     }
@@ -182,11 +180,12 @@ for (i = 1; i <= 50; i++) {
 function reversString(str) {
   let revStr = ""
   for (i = str.length - 1; i >= 0; i--) {
-
     revStr = revStr + str[i]
   }
+
   console.log(revStr)
 
 }
 
 reversString("abcdefg")
+
