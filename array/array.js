@@ -87,7 +87,7 @@ for (i = 0; i < lenNum; i++) {
 console.log(maxNum)
 console.log(secondLarg)
 
-//Crate a program to revers an arrray manually
+//Crate a program to revers an array manually
 reversArray = []
 for (i = numArray.length - 1; i >= 0; i--) {
     reversArray.push(numArray[i])

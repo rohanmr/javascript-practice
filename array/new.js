@@ -65,7 +65,7 @@ console.log(sumArray([1, 2, 3, 4])); // 10
 let nums = [2, 3, 4, 2, 4, 5, 6, 3];
 dup = []
 
-function remvoveDuplicates(arr) {
+function removeDuplicates(arr) {
   for (let i = 0; i < arr.length; i++) {
     if (!dup.includes(arr[i])) {
       dup.push(arr[i])
@@ -75,7 +75,7 @@ function remvoveDuplicates(arr) {
 }
 
 
-remvoveDuplicates(nums)
+removeDuplicates(nums)
 console.log(dup)
 
 
